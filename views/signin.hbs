@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <!-- Created By GOWRISHANKARVV -->
+      <!--github : https://github.com/Gowrishankarvv-->
+      <!--website: https://gowrishankarvv.ml/ -->
+      <link rel="stylesheet" href="/stylesheets/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <div class="content">
+         <div class="text">
+            Login 
+         </div>
+         <form action="signin" method="post">
+            {{# if contactErr}}
+                <p class="contactErr">{{contactErr}}</p>
+            {{/if}}
+            <div class="field">
+               <input type="text" required name="contact">
+               <span class="fas fa-user"></span>
+               <label>Email or Phone</label>
+            </div>
+          
+            <div class="field">
+               <input type="password" required name="password">
+               <span class="fas fa-lock"></span>
+               <label>Password</label>
+            </div>
+            {{# if passErr}}
+                <p class="passErr">{{passErr}}</p>
+            {{/if}}
+            <div class="forgot-pass">
+               <a href=""  target="_blank">Forgot Password?</a>
+            </div>
+            <button>Sign in</button>
+            <div class="sign-up">
+               Not a member?
+               <a href="/signup" > signup now</a>
+            </div>
+         </form>
+         <div class="text">
+         <footer>
+            <p>IGORAZA<br>
+          </footer>
+         </div>
+      </div>
+   </body>
+</html>
+ <!-- Created By GOWRISHANKARVV -->
+      <!--github : https://github.com/Gowrishankarvv-->
+      <!--website: https://gowrishankarvv.ml/ -->
